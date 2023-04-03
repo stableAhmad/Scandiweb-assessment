@@ -1,0 +1,30 @@
+CREATE TABLE product 
+(
+sku VARCHAR (70) NOT NULL,
+name VARCHAR(70) NOT NULL,
+price INT NOT NULL,
+PRIMARY KEY (sku)
+);
+
+CREATE TABLE book
+(
+sku VARCHAR (70) NOT NULL,
+weight INT NOT NULL,
+FOREGIN KEY (sku) REFERENCES product(sku)
+);
+
+CREATE TABLE dvd
+(
+sku VARCHAR (70) NOT NULL,
+size INT NOT NULL,
+FOREGIN KEY (sku) REFERENCES product(sku)
+);
+
+CREATE TABLE furniture
+(
+sku VARCHAR (70) NOT NULL,
+length INT NOT NULL,
+width INT NOT NULL,
+height INT NOT NULL,
+FOREGIN KEY (sku) REFERENCES product(sku)
+);

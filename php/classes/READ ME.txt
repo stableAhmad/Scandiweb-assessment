@@ -1,0 +1,1 @@
+-placing each class in a separate file is too many files but I did it in order to meet the PSR-1: Basic Coding Standard 
